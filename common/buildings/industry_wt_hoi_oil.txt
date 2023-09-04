@@ -1,0 +1,20 @@
+﻿#合成炼油厂
+building_wt_hoi_oil = {
+	building_group = bg_wt_hoi_oil_industry	#继承的建筑组
+	texture = "gfx/interface/icons/building_icons/unused/foundries.dds"	#建筑图标
+	city_type = city	#城市类型
+	has_max_level = yes
+	levels_per_mesh = 1
+	urbanization = 100	#城市化
+	unlocking_technologies = {
+		# pumpjacks	#泵水机
+		tt_wt_hoi_oil	#石油转化
+	}	#解锁科技
+	production_method_groups = {
+		pmg_wt_hoi_produce	#生产方式
+		pmg_wt_hoi_burn
+		pmg_ownership_capital_building_war_machine_industry	#战争工厂的所有权分配
+	}	#生产方式
+	required_construction = 415	#建造花费14500/(15*5)/7*15
+	ai_value = 10000	#ai倾向度
+}

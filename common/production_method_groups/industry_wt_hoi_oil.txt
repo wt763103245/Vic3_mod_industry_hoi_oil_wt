@@ -1,0 +1,23 @@
+#生产方式
+pmg_wt_hoi_produce = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_wt_hoi_oil_refine	#石油精炼
+		pm_wt_hoi_oil_liquor	#燃料乙醇
+		pm_wt_hoi_oil_coal	#液化煤
+	}
+}
+#燃烧方式
+pmg_wt_hoi_burn = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_wt_hoi_oil_no	#无需燃料
+		pm_wt_hoi_oil_clothes	#布
+		pm_wt_hoi_oil_wood	#木头
+		pm_wt_hoi_coal_coal	#煤
+		pm_wt_hoi_oil_electricity	#电
+		pm_wt_hoi_oil_oil	#油
+	}
+}

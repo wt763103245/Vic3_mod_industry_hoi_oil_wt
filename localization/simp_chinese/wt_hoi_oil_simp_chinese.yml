@@ -1,0 +1,50 @@
+﻿l_simp_chinese:
+#合成炼油厂
+ #building
+ building_wt_hoi_oil:0 "合成炼油厂"
+ building_wt_hoi_oil_desc:0 "合成石油实验"
+ building_wt_hoi_oil:0 "扩建$building_wt_hoi_oil$"
+
+ #bg
+ bg_building_wt_hoi_oil:0 "地区建筑"
+ bg_wt_hoi_oil_industry:0 "石油工业"
+
+ #good
+ 
+ #pm
+ pm_wt_hoi_oil_refine:0 "石油精炼"
+ pm_wt_hoi_oil_liquor:0 "燃料乙醇"
+ pm_wt_hoi_oil_coal:0 "煤液化"
+ pm_wt_hoi_oil_no:0 "无需燃料"
+ pm_wt_hoi_oil_wood:0 "木头"
+ pm_wt_hoi_oil_clothes:0 "织布"
+ pm_wt_hoi_coal_coal:0 "煤炭"
+ pm_wt_hoi_oil_electricity:0 "电力"
+ pm_wt_hoi_oil_oil:0 "天然气"
+
+ #pmg
+ pmg_wt_hoi_produce:0 "生产方式"
+ pmg_wt_hoi_burn:0 "燃烧方式"
+ 
+ #modifier_types
+ modifier_building_wt_hoi_oil_throughput_mult:0 "$building_wt_hoi_oil$建筑[concept_throughput]"
+ modifier_state_building_wt_hoi_oil_max_level_add:0 "$building_wt_hoi_oil$最大等级"
+ modifier_state_building_wt_hoi_oil_max_level_add_desc:0 "对$building_wt_hoi_oil$建筑最大等级的增益或惩罚"
+ modifier_building_wt_hoi_oil_throughput_mult_desc:0 "对$building_wt_hoi_oil$投入和产出的增益或惩罚"
+
+ #tt
+ tt_wt_hoi_oil:0 "合成石油实验"
+ tt_wt_hoi_oil_desc:0 "为减少对原油的依赖，可以研究从其他物质、材料生产原油代替物的方法。"
+ tt_wt_hoi_oil1:0 "石油加工"
+ tt_wt_hoi_oil1_desc:0 "合成蒸馏和精炼石油产品的工厂网络是确保我国燃料供应的下一个步骤。"
+ tt_wt_hoi_oil2:0 "改进石油加工"
+ tt_wt_hoi_oil2_desc:0 "像加氢处理这样的新实验纯化技术可以用于石油生产，以大大改善最终产品。"
+ tt_wt_hoi_oil3:0 "先进石油加工"
+ tt_wt_hoi_oil3_desc:0 "为减少对原油的依赖，可以研究从其他物质、材料生产原油代替物的方法。"
+ tt_wt_hoi_oil4:0 "现代石油加工"
+ tt_wt_hoi_oil4_desc:0 "我们的燃油厂可以通过加氢裂化，烷基化，硫醇氧化和异构化等先进的石油加工方法进一步改善。"
+
+ #other
+ pm_privately_owned_building_wt_hoi_oil:0 "$pm_privately_owned$"
+ pm_government_run_building_wt_hoi_oil:0 "$pm_government_run$"
+ pm_worker_cooperative_building_wt_hoi_oil:0 "$pm_worker_cooperative$"

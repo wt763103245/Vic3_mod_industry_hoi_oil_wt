@@ -1,0 +1,15 @@
+bg_wt_hoi_building_groups = {   #建筑主组，前格式必须为bg_，后可自定义
+	category = development    #这是建筑组所属的类别，urban（城市）、rural（乡村）、development（开发）
+	always_possible = yes    #这是建筑组所属建筑是否能无限制修建，no即为有限制的修建（资源、等级限制等）
+	economy_of_scale = yes    #这是建筑每级是否能获得吞吐量修正（自给建筑除外）
+	cash_reserves_max = 25000 #建筑最高的储备金
+	is_government_funded = no	#是否由政府资助
+	stateregion_max_level = yes    
+}
+
+bg_wt_hoi_oil_industry = {
+	parent_group = bg_wt_hoi_building_groups   #附属于哪一个主建筑组，可直接套游戏原有的建筑组
+	lens = heavy_industry    #该建筑组内的建筑分属什么类型的建筑，此外还有重工业（heavy_industry）、农业（agriculture）等，如写在主建筑里则为一个大类（比如农业就包括了所有的农田）
+	urbanization = 100    #每级城市化率
+	infrastructure_usage_per_level = 3    #建筑每级所使用的基础设施值
+}

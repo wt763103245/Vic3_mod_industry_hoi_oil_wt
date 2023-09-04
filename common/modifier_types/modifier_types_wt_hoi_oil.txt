@@ -1,0 +1,11 @@
+﻿#合成炼油厂
+ state_building_wt_hoi_oil_max_level_add = {
+	good = yes 
+	percent = no
+	num_decimals = 0
+ }	#当地炼油厂可建造数量
+ building_wt_hoi_oil_throughput_mult = {
+	good = yes 
+	percent = yes
+	num_decimals = 0
+ }	#炼油厂吞吐量

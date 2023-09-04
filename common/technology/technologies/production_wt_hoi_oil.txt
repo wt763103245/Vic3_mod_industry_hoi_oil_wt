@@ -1,0 +1,57 @@
+#石油产业
+tt_wt_hoi_oil = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
+	category = production
+	modifier = {
+		state_building_wt_hoi_oil_max_level_add = 3
+	}
+	unlocking_technologies = {
+		pumpjacks
+	}
+}
+tt_wt_hoi_oil1 = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
+	category = production
+	modifier = {
+		building_wt_hoi_oil_throughput_mult = 0.5
+	}
+	unlocking_technologies = {
+		tt_wt_hoi_oil
+	}
+}
+tt_wt_hoi_oil2 = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
+	category = production
+	modifier = {
+		building_wt_hoi_oil_throughput_mult = 0.5
+	}
+	unlocking_technologies = {
+		tt_wt_hoi_oil1
+	}
+}
+tt_wt_hoi_oil3 = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
+	category = production
+	modifier = {
+		building_wt_hoi_oil_throughput_mult = 0.5
+	}
+	unlocking_technologies = {
+		tt_wt_hoi_oil2
+		combustion_engine
+	}
+}
+tt_wt_hoi_oil4 = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
+	category = production
+	modifier = {
+		building_wt_hoi_oil_throughput_mult = 0.5
+	}
+	unlocking_technologies = {
+		tt_wt_hoi_oil3
+	}
+}
