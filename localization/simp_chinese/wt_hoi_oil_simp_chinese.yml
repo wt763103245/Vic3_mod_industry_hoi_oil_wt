@@ -21,6 +21,7 @@
  pm_wt_hoi_coal_coal:0 "煤炭"
  pm_wt_hoi_oil_electricity:0 "电力"
  pm_wt_hoi_oil_oil:0 "天然气"
+ pm_wt_hoi_oil_liquor_burn:0 "乙醇"
 
  #pmg
  pmg_wt_hoi_produce:0 "生产方式"

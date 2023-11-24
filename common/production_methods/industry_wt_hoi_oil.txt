@@ -1,83 +1,99 @@
 #生产方式
 	#精炼石油
 	pm_wt_hoi_oil_refine = {
+		# 当前生产方式显示在游戏中的贴图
 		texture = "gfx/interface/icons/goods_icons/oil.dds"
+		# 建筑建造后默认使用的生产方式
+		is_default = yes
 		# 污染等级
-		pollution_generation = 5
+		state_modifiers = {
+			workforce_scaled = {
+				state_pollution_generation_add = 5
+			}
+		}
 		# 解锁科技
 		unlocking_technologies = {
 			# pumpjacks	#泵水机
 			tt_wt_hoi_oil	#石油转化
 		}	#解锁条件
-		# 建筑产出和需求
 		building_modifiers = {
 			# 产出
 			workforce_scaled = {
+				# modifier definition
 				# input goods
-				building_input_tools_add = 1	#工具需求，需要更多贵重的设备，用更多的工具代替
+				goods_input_tools_add = 1	#工具需求损耗，需要更多贵重的设备，用更多的工具代替
 				# output goods
-				building_output_oil_add = 30	#石油产出，精炼产生的效率石油
-				building_output_services_add = 12	#产出的其他消费品30*0.4，用服务代替
+				goods_output_oil_add = 30	#石油产出，精炼产生的效率石油
+				goods_output_services_add = 12	#产出的其他消费品30*0.4，用服务代替
 			}
 			# 需求
-			level_scaled = {
-				building_employment_laborers_add = 150	#劳工
-				building_employment_clerks_add = 50	#职员
-				building_employment_machinists_add = 50	#技工
-				building_employment_engineers_add = 50	#工程师
-				building_employment_academics_add = 50	#学者
+			level_scaled = {					# these modifiers are scaled by the level of the building
+				# modifier definition
+				# 修改工厂人数到5k符合游戏其他建筑的人口比例
+				building_employment_laborers_add = 2500	#劳工
+				building_employment_clerks_add = 750	#职员
+				building_employment_machinists_add = 1000	#技工
+				building_employment_engineers_add = 500	#工程师
+				building_employment_academics_add = 250	#学者
 			}
+			# # ？可能是不受到规模影响的效果
+			# unscaled = {						# these modifiers are not scaled
+			# 	# modifier definition
+			# }
 		}
 	}
 	#燃料乙醇
 	pm_wt_hoi_oil_liquor = {
 		texture = "gfx/interface/icons/goods_icons/liquor.dds"
-		pollution_generation = 5
 		unlocking_technologies = {
 			combustion_engine	#电气化铁路
 		}
 		building_modifiers = {
 			workforce_scaled = {
 				# input goods
-				building_input_tools_add = 1 #工具需求
-				building_input_liquor_add = 40 #烈酒需求，用10%的燃料乙醇代替纯石油
+				goods_input_tools_add = 1 #工具需求
+				goods_input_liquor_add = 40 #烈酒需求，用10%的燃料乙醇代替纯石油
 				# output goods
-				building_output_oil_add = 40 #石油产出，代替的乙醇等同于石油
-				# building_output_services_add = 16	#服务产出
-				building_output_glass_add = 4	#玻璃产出40/10，回收玻璃瓶
+				goods_output_oil_add = 40 #石油产出，代替的乙醇等同于石油
+				# goods_output_services_add = 16	#服务产出
+				goods_output_glass_add = 4	#玻璃产出40/10，回收玻璃瓶
 			}
 			level_scaled = {
-				building_employment_laborers_add = 100	#劳工
-				building_employment_clerks_add = 50	#职员
-				building_employment_machinists_add = 50	#技工
-				building_employment_engineers_add = 50	#工程师
-				building_employment_academics_add = 50	#学者
+				building_employment_laborers_add = 2000	#劳工
+				building_employment_clerks_add = 500	#职员
+				building_employment_machinists_add = 1250	#技工
+				building_employment_engineers_add = 750	#工程师
+				building_employment_academics_add = 500	#学者
 			}
 		}
 	}
 	#煤液化
 	pm_wt_hoi_oil_coal = {
 		texture = "gfx/interface/icons/goods_icons/coal.dds"
-		pollution_generation = 5
+		state_modifiers = {
+			workforce_scaled = {
+				state_pollution_generation_add = 5
+			}
+		}
 		unlocking_technologies = {
 			mobile_armor	#战争工厂
 		}
 		building_modifiers = {
 			workforce_scaled = {
 				# input goods
-				building_input_tools_add = 1 #工具需求
-				building_input_coal_add = 130 #煤炭需求
+				goods_input_tools_add = 1 #工具需求
+				goods_input_coal_add = 130 #煤炭需求
 				# output goods
-				building_output_oil_add = 50 #石油产出，50*100*1.9/180
-				building_output_rubber_add = 50	#橡胶产出，与石油1比1
-				building_output_services_add = 20	#服务产出
+				goods_output_oil_add = 50 #石油产出，50*100*1.9/180
+				goods_output_rubber_add = 50	#橡胶产出，与石油1比1
+				goods_output_services_add = 20	#服务产出
 			}
 			level_scaled = {
-				building_employment_laborers_add = 50	#劳工
-				building_employment_clerks_add = 50	#职员
-				building_employment_machinists_add = 50	#技工
-				building_employment_engineers_add = 50	#工程师
-				building_employment_academics_add = 50	#学者
+				building_employment_laborers_add = 1500	#劳工
+				building_employment_clerks_add = 250	#职员
+				building_employment_machinists_add = 1500	#技工
+				building_employment_engineers_add = 1000	#工程师
+				building_employment_academics_add = 750	#学者
 			}
 		}
 	}
@@ -85,7 +101,6 @@
 #燃烧方式
 	pm_wt_hoi_oil_no = {
 		texture = "gfx/interface/icons/generic_icons/toggle.dds"
-		pollution_generation = 5
 		unlocking_production_methods = {
 			pm_wt_hoi_oil_liquor	#燃料乙醇
 			pm_wt_hoi_oil_coal	#煤液化
@@ -93,67 +108,94 @@
 	}	#无需燃料
 	pm_wt_hoi_oil_wood = {
 		texture = "gfx/interface/icons/goods_icons/wood.dds"
-		pollution_generation = 5
+		state_modifiers = {
+			workforce_scaled = {
+				state_pollution_generation_add = 5
+			}
+		}
 		unlocking_production_methods = {
 			pm_wt_hoi_oil_refine	#精炼
 		}	#解锁需要的生产方式
 		building_modifiers = {
 			workforce_scaled = {
 				# input goods
-				building_input_wood_add = 60 #木头需求
+				goods_input_wood_add = 60 #木头需求
 			}
 		}
 	}	#木头
 	pm_wt_hoi_oil_clothes = {
 		texture = "gfx/interface/icons/goods_icons/fabric.dds"
-		pollution_generation = 5
+		state_modifiers = {
+			workforce_scaled = {
+				state_pollution_generation_add = 5
+			}
+		}
 		unlocking_production_methods = {
 			pm_wt_hoi_oil_refine	#精炼
 		}	#解锁需要的生产方式
 		building_modifiers = {
 			workforce_scaled = {
 				# input goods
-				building_input_fabric_add = 60 #布需求
+				goods_input_fabric_add = 60 #布需求
 			}
 		}
 	}	#布
 	pm_wt_hoi_coal_coal = {
 		texture = "gfx/interface/icons/goods_icons/coal.dds"
-		pollution_generation = 5
+		state_modifiers = {
+			workforce_scaled = {
+				state_pollution_generation_add = 5
+			}
+		}
 		unlocking_production_methods = {
 			pm_wt_hoi_oil_refine	#精炼
 		}	#解锁需要的生产方式
 		building_modifiers = {
 			workforce_scaled = {
 				# input goods
-				building_input_coal_add = 40 #煤需求
+				goods_input_coal_add = 40 #煤需求
 			}
 		}
 	}	#煤
 	pm_wt_hoi_oil_electricity = {
 		texture = "gfx/interface/icons/goods_icons/electricity.dds"
-		pollution_generation = 5
 		unlocking_production_methods = {
 			pm_wt_hoi_oil_refine	#精炼
 		}	#解锁需要的生产方式
+		# 解锁科技
+		unlocking_technologies = {
+			electrical_generation	# 发电
+		}	#解锁条件
 		building_modifiers = {
 			workforce_scaled = {
 				# input goods
-				building_input_electricity_add = 40 #电需求
+				goods_input_electricity_add = 40 #电需求
 			}
 		}
 	}	#电
 	pm_wt_hoi_oil_oil = {
 		texture = "gfx/interface/icons/goods_icons/oil.dds"
-		pollution_generation = 5
 		unlocking_production_methods = {
 			pm_wt_hoi_oil_refine	#精炼
 		}	#解锁需要的生产方式
 		building_modifiers = {
 			workforce_scaled = {
-				building_output_oil_add = -30	#直接减产量
+				goods_output_oil_add = -30	#直接减产量
 				# input goods
-				# building_input_oil_add = 30 #油需求
+				# goods_input_oil_add = 30 #油需求
 			}
 		}
 	}	#油
+	# 酒精
+	pm_wt_hoi_oil_liquor_burn = {
+		texture = "gfx/interface/icons/goods_icons/liquor.dds"
+		unlocking_production_methods = {
+			pm_wt_hoi_oil_refine	#精炼
+		}	#解锁需要的生产方式
+		building_modifiers = {
+			workforce_scaled = {
+				goods_input_liquor_add = 30 #烈酒需求
+				goods_output_glass_add = 3	#玻璃产出/10
+			}
+		}
+	}

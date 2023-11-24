@@ -19,5 +19,6 @@ pmg_wt_hoi_burn = {
 		pm_wt_hoi_coal_coal	#煤
 		pm_wt_hoi_oil_electricity	#电
 		pm_wt_hoi_oil_oil	#油
+		pm_wt_hoi_oil_liquor_burn	#乙醇
 	}
 }
