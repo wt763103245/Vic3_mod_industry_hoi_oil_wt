@@ -29,10 +29,10 @@
 			# 需求
 			level_scaled = {					# these modifiers are scaled by the level of the building
 				# modifier definition
-				# 修改工厂人数到5k符合游戏其他建筑的人口比例
-				building_employment_laborers_add = 2500	#劳工
+				# 修改工厂人数到4.5k符合游戏其他建筑的人口比例
+				building_employment_laborers_add = 2250	#劳工
 				building_employment_clerks_add = 750	#职员
-				building_employment_machinists_add = 1000	#技工
+				building_employment_machinists_add = 750	#技工
 				building_employment_engineers_add = 500	#工程师
 				building_employment_academics_add = 250	#学者
 			}
@@ -59,9 +59,9 @@
 				goods_output_glass_add = 4	#玻璃产出40/10，回收玻璃瓶
 			}
 			level_scaled = {
-				building_employment_laborers_add = 2000	#劳工
+				building_employment_laborers_add = 1750	#劳工
 				building_employment_clerks_add = 500	#职员
-				building_employment_machinists_add = 1250	#技工
+				building_employment_machinists_add = 1000	#技工
 				building_employment_engineers_add = 750	#工程师
 				building_employment_academics_add = 500	#学者
 			}
@@ -91,9 +91,9 @@
 			level_scaled = {
 				building_employment_laborers_add = 1500	#劳工
 				building_employment_clerks_add = 250	#职员
-				building_employment_machinists_add = 1500	#技工
+				building_employment_machinists_add = 750	#技工
 				building_employment_engineers_add = 1000	#工程师
-				building_employment_academics_add = 750	#学者
+				building_employment_academics_add = 1000	#学者
 			}
 		}
 	}

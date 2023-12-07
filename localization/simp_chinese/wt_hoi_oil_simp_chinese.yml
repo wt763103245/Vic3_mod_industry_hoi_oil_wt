@@ -6,7 +6,7 @@
  building_wt_hoi_oil:0 "扩建$building_wt_hoi_oil$"
 
  #bg
- bg_building_wt_hoi_oil:0 "地区建筑"
+ bg_wt_hoi_building_groups: "地区建筑"
  bg_wt_hoi_oil_industry:0 "石油工业"
 
  #good

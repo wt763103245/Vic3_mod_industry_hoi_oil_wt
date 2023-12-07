@@ -14,7 +14,9 @@ building_wt_hoi_oil = {
 		pmg_wt_hoi_produce	#生产方式
 		pmg_wt_hoi_burn
 		pmg_automation_building_motor_industry	# 自动化，使用动力机械厂的
-		pmg_ownership_capital_building_war_machine_industry	#战争工厂的所有权分配
+		# 所有权分配，使用铁路的
+		pmg_ownership_capital_building_railway
+		# pmg_ownership_capital_building_war_machine_industry	#战争工厂的所有权分配
 	}	#生产方式
 	# 14500（钢4同名建筑）/15（钢四最大同时建造）/5（基础民工）/7（每周）*15（最大同时建造力）~=415
 	# 1.5建造力提升，之前是按照建筑部门的建造力计算，现在建筑部分从50->100了，同样这里提升*2
