@@ -15,7 +15,7 @@ tt_wt_hoi_oil1 = {
 	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
 	category = production
 	modifier = {
-		building_wt_hoi_oil_throughput_mult = 0.5
+		building_wt_hoi_oil_throughput_add = 0.5
 	}
 	unlocking_technologies = {
 		tt_wt_hoi_oil
@@ -26,7 +26,7 @@ tt_wt_hoi_oil2 = {
 	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
 	category = production
 	modifier = {
-		building_wt_hoi_oil_throughput_mult = 0.5
+		building_wt_hoi_oil_throughput_add = 0.5
 	}
 	unlocking_technologies = {
 		tt_wt_hoi_oil1
@@ -37,7 +37,7 @@ tt_wt_hoi_oil3 = {
 	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
 	category = production
 	modifier = {
-		building_wt_hoi_oil_throughput_mult = 0.5
+		building_wt_hoi_oil_throughput_add = 0.5
 	}
 	unlocking_technologies = {
 		tt_wt_hoi_oil2
@@ -49,7 +49,7 @@ tt_wt_hoi_oil4 = {
 	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
 	category = production
 	modifier = {
-		building_wt_hoi_oil_throughput_mult = 0.5
+		building_wt_hoi_oil_throughput_add = 0.5
 	}
 	unlocking_technologies = {
 		tt_wt_hoi_oil3

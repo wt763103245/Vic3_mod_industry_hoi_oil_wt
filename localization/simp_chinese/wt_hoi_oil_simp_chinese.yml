@@ -28,10 +28,10 @@
  pmg_wt_hoi_burn:0 "燃烧方式"
  
  #modifier_types
- modifier_building_wt_hoi_oil_throughput_mult:0 "$building_wt_hoi_oil$建筑[concept_throughput]"
+ modifier_building_wt_hoi_oil_throughput_add:0 "$building_wt_hoi_oil$建筑[concept_throughput]"
  modifier_state_building_wt_hoi_oil_max_level_add:0 "$building_wt_hoi_oil$最大等级"
  modifier_state_building_wt_hoi_oil_max_level_add_desc:0 "对$building_wt_hoi_oil$建筑最大等级的增益或惩罚"
- modifier_building_wt_hoi_oil_throughput_mult_desc:0 "对$building_wt_hoi_oil$投入和产出的增益或惩罚"
+ modifier_building_wt_hoi_oil_throughput_add_desc:0 "对$building_wt_hoi_oil$投入和产出的增益或惩罚"
 
  #tt
  tt_wt_hoi_oil:0 "合成石油实验"
